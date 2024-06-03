@@ -1,0 +1,69 @@
+.card {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-right: 170px solid #ddd;
+  border-bottom: 100px solid #ccc;
+  border-left: 170px solid #ccc;
+}
+
+.heart {
+  margin-top: 10px;
+  width: 75px;
+  height: 75px;
+  background-color: #ff3838;
+
+  /* heard top right corner at center of envelope */
+  /* adjust to middle and rotate */
+  transform: translate(-50%, -50%) rotate(45deg);
+  /* apply animation from below */
+  animation: heartbeat 1.4s linear infinite;
+}
+
+/* top right of heart */
+.heart:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+/* top left of heart */
+.heart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* have heart change sizes to look like it's beating */
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+}

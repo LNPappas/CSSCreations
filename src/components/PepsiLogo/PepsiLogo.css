@@ -1,0 +1,33 @@
+.pepsi {
+  height: 300px;
+  width: 300px;
+
+  background-color: #34588e;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.pepsi:before {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 25%;
+  background-color: white;
+  top: -258px;
+  left: -238px;
+  transform: rotate(-104deg);
+}
+
+.pepsi:after {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 550px;
+  border-radius: 50%;
+  background-color: red;
+  top: -287px;
+  left: -262px;
+}
