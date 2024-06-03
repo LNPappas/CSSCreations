@@ -2,7 +2,7 @@
   "name": "css-creations",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://lnpappas.github.io/CssCreations/",
+  "homepage": "https://lnpappas.github.io/CSSCreations/",
   "type": "module",
   "scripts": {
     "dev": "vite",
