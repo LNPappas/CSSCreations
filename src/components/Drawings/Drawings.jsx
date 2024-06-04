@@ -1,4 +1,8 @@
 import React from "react";
+
+import Batman from "../Batman";
+import Camera from "../Camera";
+import CoffeeMug from "../CoffeeMug";
 import Diamond from "../Diamond";
 import HeartEnvelope from "../HeartEnvelope";
 import PepsiLogo from "../PepsiLogo";
@@ -14,10 +18,19 @@ export function Drawings() {
           <Diamond />
         </div>
         <div className="drawing-item">
+          <Camera />
+        </div>
+        <div className="drawing-item">
           <HeartEnvelope />
         </div>
         <div className="drawing-item">
           <PepsiLogo />
+        </div>
+        <div className="drawing-item">
+          <CoffeeMug />
+        </div>
+        <div className="drawing-item">
+          <Batman />
         </div>
       </div>
     </>

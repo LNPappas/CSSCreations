@@ -7,3 +7,6 @@ View Site - [Here](https://lnpappas.github.io/CSSCreations/)
 - Diamond
 - Heart Envelope
 - Pepsi Logo
+- Camera
+- Coffee Mug
+- Batman Logo
